@@ -1,0 +1,20 @@
+.list {
+  font-size: 16px;
+}
+
+.ordered {
+  list-style: decimal;
+  padding-left: 20px;
+
+  li {
+    margin: 10px 0;
+  }
+}
+
+.unordered {
+  list-style: disc inside;
+
+  li {
+    margin: 10px 0;
+  }
+}

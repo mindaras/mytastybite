@@ -1,0 +1,128 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["fullTextSearch"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Recipe_en {
+  id                  Int      @id @default(autoincrement())
+  externalId          String   @unique
+  title               String
+  titleWithoutAccents String
+  description         String
+  preparation         String[]
+  ingredients         String[]
+  servings            Int
+  duration            String
+  nutrition           String[]
+  category            Category
+  diet                Diet
+  createdAt           DateTime @default(now())
+
+  @@index([category])
+  @@index([diet])
+  @@index([titleWithoutAccents])
+}
+
+model Recipe_es {
+  id                  Int      @id
+  externalId          String   @unique
+  title               String
+  titleWithoutAccents String
+  description         String
+  preparation         String[]
+  ingredients         String[]
+  servings            Int
+  duration            String
+  nutrition           String[]
+  category            Category
+  diet                Diet
+  createdAt           DateTime @default(now())
+
+  @@index([category])
+  @@index([diet])
+  @@index([titleWithoutAccents])
+}
+
+model Recipe_lt {
+  id                  Int      @id
+  externalId          String   @unique
+  title               String
+  titleWithoutAccents String
+  description         String
+  preparation         String[]
+  ingredients         String[]
+  servings            Int
+  duration            String
+  nutrition           String[]
+  category            Category
+  diet                Diet
+  createdAt           DateTime @default(now())
+
+  @@index([category])
+  @@index([diet])
+  @@index([titleWithoutAccents])
+}
+
+enum Category {
+  Breakfast
+  Dinner
+  Lunch
+  Snack
+  Dessert
+}
+
+enum Diet {
+  Healthy
+  Vegetarian
+  Vegan
+  Keto
+  LowCarb
+  None
+}
+
+model Article_en {
+  id                  Int      @id @default(autoincrement())
+  externalId          String   @unique
+  title               String
+  titleWithoutAccents String   @unique
+  description         String
+  body                String
+  readTime            String
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime? @updatedAt
+
+  @@index([titleWithoutAccents])
+}
+
+model Article_es {
+  id                  Int      @id
+  externalId          String   @unique
+  title               String
+  titleWithoutAccents String   @unique
+  description         String
+  body                String
+  readTime            String
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime? @updatedAt
+
+  @@index([titleWithoutAccents])
+}
+
+model Article_lt {
+  id                  Int      @id
+  externalId          String   @unique
+  title               String
+  titleWithoutAccents String   @unique
+  description         String
+  body                String
+  readTime            String
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime? @updatedAt
+
+  @@index([titleWithoutAccents])
+}

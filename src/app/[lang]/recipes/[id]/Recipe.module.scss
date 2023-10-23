@@ -1,0 +1,104 @@
+@import "@styles";
+
+.backButton {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  &:first-of-type {
+    margin-right: 20px;
+  }
+
+  &:last-of-type {
+    max-width: 600px;
+  }
+
+  @include media(medium) {
+    &:first-of-type {
+      order: 1;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.content {
+  display: flex;
+
+  @include media(medium) {
+    flex-direction: column;
+  }
+}
+
+@mixin image {
+  border-radius: 4px;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  @include image;
+  width: 360px;
+  height: 360px;
+  margin-bottom: 20px;
+
+  @include media(medium) {
+    display: none;
+  }
+}
+
+.mobileImage {
+  @include image;
+  display: none;
+  width: 100%;
+  max-height: 600px;
+  max-width: 600px;
+
+  @include media(medium) {
+    display: block;
+  }
+
+  @include media(small) {
+    height: 90vw;
+  }
+}
+
+.unorderedLists {
+  > * {
+    max-width: 360px;
+  }
+
+  @include media(medium) {
+    display: flex;
+
+    > * {
+      max-width: 50%;
+
+      &:first-of-type {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  @include media(small) {
+    flex-direction: column;
+
+    > * {
+      max-width: none;
+
+      &:first-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.description {
+  font-size: 16px;
+  align-self: center;
+  margin-top: 20px;
+}

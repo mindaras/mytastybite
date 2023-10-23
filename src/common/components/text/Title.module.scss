@@ -1,0 +1,16 @@
+@import "@styles";
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 60px;
+
+  @include media(medium) {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  @include media(small) {
+    margin-bottom: 40px;
+  }
+}

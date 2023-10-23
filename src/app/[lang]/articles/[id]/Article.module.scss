@@ -1,0 +1,110 @@
+@import "@styles";
+
+.backButton {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.metadata {
+  display: flex;
+  align-items: flex;
+  margin-bottom: 5px;
+
+  > * {
+    color: $lightGray;
+
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.column {
+  &:first-of-type {
+    margin-right: 20px;
+  }
+
+  &:last-of-type {
+    max-width: 600px;
+  }
+
+  @include media(medium) {
+    &:first-of-type {
+      order: 1;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.content {
+  display: flex;
+
+  @include media(medium) {
+    flex-direction: column;
+  }
+}
+
+.image {
+  width: 100%;
+  max-width: 800px;
+  height: 50vh;
+  margin: 0 auto 40px;
+  border-radius: 4px;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+
+  @include media(small) {
+    height: 90vw;
+  }
+}
+
+.body {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  > * {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  ul,
+  ol {
+    list-style: initial;
+    margin-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  br {
+    margin-top: -20px;
+  }
+}

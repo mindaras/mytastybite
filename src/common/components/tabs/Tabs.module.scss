@@ -1,0 +1,77 @@
+@import "@styles";
+
+.container {
+  display: flex;
+  max-width: 800px;
+
+  &__center {
+    justify-content: center;
+  }
+
+  &__fullWidth {
+    max-width: none;
+  }
+}
+
+.tabs {
+  background-color: #fff;
+
+  @include media(small) {
+    width: 100%;
+  }
+
+  &__expand {
+    width: 100%;
+  }
+}
+
+.buttons {
+  display: flex;
+
+  @include media(small) {
+    flex-direction: column;
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  padding: 10px 20px;
+  border-top: $border;
+  border-right: $border;
+  box-shadow: $lightShaddow;
+
+  &:first-of-type {
+    border-left: $border;
+  }
+
+  &:hover {
+    background-color: $grayHover;
+  }
+
+  @include media(small) {
+    width: 100%;
+    border-left: $border;
+
+    &:not(:first-of-type) {
+      border-radius: 0;
+    }
+  }
+
+  &__active {
+    font-weight: bold;
+  }
+}
+
+.content {
+  padding: 20px;
+  border-radius: 0 4px 4px 4px;
+  border: $border;
+  box-shadow: $lightShaddow;
+
+  @include media(small) {
+    border-radius: 0 0 4px 4px;
+  }
+}

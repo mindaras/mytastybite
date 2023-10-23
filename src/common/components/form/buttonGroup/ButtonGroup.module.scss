@@ -1,0 +1,44 @@
+@import "@styles";
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+
+  @include media(small) {
+    flex-direction: column;
+  }
+
+  &__reverseMobile {
+    @include media(small) {
+      flex-direction: column-reverse;
+
+      > * {
+        &:first-of-type {
+          margin-bottom: 0 !important;
+        }
+
+        &:last-of-type {
+          margin-bottom: 20px !important;
+        }
+      }
+    }
+  }
+
+  > * {
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
+
+    @include media(small) {
+      margin-bottom: 20px;
+
+      &:not(:last-of-type) {
+        margin-right: 0;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

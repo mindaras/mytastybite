@@ -1,0 +1,47 @@
+@import "@styles";
+
+.container {
+  max-width: 800px;
+
+  &__fullWidth {
+    max-width: none;
+  }
+}
+
+.textField {
+  max-width: none;
+  min-height: 165px;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.editor {
+  @include richText;
+
+  > *:first-child {
+    outline: none;
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+.control {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: $border;
+  }
+
+  &__active {
+    font-weight: bold;
+  }
+}

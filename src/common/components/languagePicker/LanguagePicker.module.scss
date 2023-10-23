@@ -1,0 +1,29 @@
+@import "@styles";
+
+.container {
+  display: inline-block;
+  max-width: none !important;
+  min-width: 45px;
+  width: auto !important;
+  margin-left: 20px;
+
+  @include media(medium) {
+    margin-left: 10px;
+  }
+}
+
+.dropdown {
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  height: 22px !important;
+  font-size: 14px;
+}
+
+.selected {
+  svg {
+    position: static !important;
+    transform: none !important;
+    margin-left: 2px;
+  }
+}

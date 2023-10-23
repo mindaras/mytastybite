@@ -1,0 +1,97 @@
+@mixin media($size) {
+  @if $size == small {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @if $size == medium {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if $size == large {
+    @media (max-width: 1300px) {
+      @content;
+    }
+  }
+
+  @if $size == largeOnly {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin richText {
+  font-size: 18px;
+  line-height: 1.5;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  li,
+  p {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
+
+  ul,
+  ol {
+    margin-left: 20px;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  em {
+    font-style: italic;
+  }
+}
+
+@mixin inputFocus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 3px rgb(0 123 255 / 25%);
+}

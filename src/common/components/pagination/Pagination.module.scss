@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+
+  svg {
+    margin: 0 12px;
+    cursor: pointer;
+
+    path {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__disabled {
+    opacity: 0.3;
+  }
+}

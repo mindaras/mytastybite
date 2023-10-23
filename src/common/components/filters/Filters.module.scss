@@ -1,0 +1,22 @@
+@import "@styles";
+
+.filters {
+  margin-bottom: 40px;
+  display: flex;
+
+  > *:not(:last-of-type) {
+    margin-right: 20px;
+  }
+
+  @include media(small) {
+    justify-content: space-between;
+  }
+}
+
+.filters__alignedRight {
+  justify-content: flex-end;
+
+  @include media(small) {
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,63 @@
+@import "@styles";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.modal {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: $lightShaddow;
+  max-width: 600px;
+  padding: 40px;
+
+  @include media(small) {
+    padding: 20px;
+    width: calc(100% - 40px);
+  }
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+
+  @include media(small) {
+    font-size: 28px;
+  }
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+
+  > *:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
+
+.disableScroll {
+  overflow: hidden;
+}

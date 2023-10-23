@@ -1,0 +1,23 @@
+@import "@styles";
+
+.large {
+  @include media(medium) {
+    display: none;
+  }
+}
+
+.mediumAndBelow {
+  display: none;
+
+  @include media(medium) {
+    display: block;
+  }
+}
+
+.small {
+  display: none;
+
+  @include media(small) {
+    display: block;
+  }
+}

@@ -1,0 +1,49 @@
+@import "@styles";
+
+.card {
+  border-radius: 4px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.disabledClick {
+  cursor: default;
+}
+
+.image {
+  height: 22vw;
+
+  @include media(medium) {
+    height: 44vw;
+  }
+
+  @include media(small) {
+    height: 94vw;
+  }
+}
+
+.content {
+  display: block;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 30px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.description {
+  font-size: 16px;
+  text-align: center;
+}
+
+.link {
+  cursor: default;
+}

@@ -1,0 +1,129 @@
+{
+  "back": "Volver",
+  "none": "Ninguno",
+  "noData": "No hay datos",
+  "form": {
+    "validation": {
+      "required": "Campo obligatorio",
+      "invalidFileType": "Tipo de archivo no válido",
+      "fileTooBig": "El archivo es demasiado grande"
+    }
+  },
+  "navigation": {
+    "logo": "Logotipo",
+    "menu": "Menú",
+    "search": "Buscar...",
+    "home": "Inicio",
+    "categories": "Categorías",
+    "diets": "Dietas",
+    "contact": "Contacto",
+    "blog": "Blog"
+  },
+  "recipes": {
+    "imageAlt": "Cuenco vacío",
+    "filters": {
+      "category": "Categoría",
+      "breakfast": "Desayuno",
+      "lunch": "Almuerzo",
+      "dinner": "Cena",
+      "snack": "Snack",
+      "dessert": "Postre",
+      "diet": "Dieta",
+      "healthy": "Saludable",
+      "vegetarian": "Vegetariana",
+      "vegan": "Vegana",
+      "lowCarb": "Baja en carbohidratos"
+    }
+  },
+  "recipe": {
+    "ingredients": "Ingredientes",
+    "nutrition": "Información nutricional",
+    "duration": "Duración",
+    "servings": "Porciones",
+    "description": "Sobre el plato",
+    "preparation": "Preparación"
+  },
+  "footer": {
+    "coprights": "© 2023 Mi Bocado Sabroso. Todos los derechos reservados."
+  },
+  "notFound": {
+    "imageAlt": "Cuenco vacío",
+    "title": "No encontrado",
+    "button": "Volver a la página de inicio"
+  },
+  "categories": {
+    "breakfast": "Desayuno",
+    "lunch": "Almuerzo",
+    "dinner": "Cena",
+    "snack": "Merienda",
+    "dessert": "Postre"
+  },
+  "diets": {
+    "healthy": "Saludable",
+    "vegetarian": "Vegetariano",
+    "vegan": "Vegano",
+    "lowCarb": "Bajo en carbohidratos"
+  },
+  "contact": {
+    "title": "Contacto",
+    "message": "¿Tienes alguna solicitud, sugerencia o simplemente quieres dejar comentarios?",
+    "form": {
+      "success": "¡Gracias por tu mensaje!",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "send": "Enviar",
+      "sending": "Enviando..."
+    }
+  },
+  "metadata": {
+    "home": {
+      "description": "Recetas deliciosas y fáciles de hacer.",
+      "keywords": [
+        "Recetas",
+        "Receta",
+        "Delicioso",
+        "Rápido",
+        "Fácil",
+        "Desayuno",
+        "Almuerzo",
+        "Cena",
+        "Snack",
+        "Postre",
+        "Saludable",
+        "Vegetariano",
+        "Vegano",
+        "Bajo en carbohidratos"
+      ],
+      "locale": "es_ES"
+    },
+    "diets": {
+      "title": "Dietas",
+      "description": "Recetas para diferentes dietas: Saludable, Vegetariana, Vegana, Baja en carbohidratos."
+    },
+    "categories": {
+      "title": "Categorías",
+      "description": "Diferentes categorías de recetas: Desayuno, Almuerzo, Cena, Postres."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Explora un mundo de delicias culinarias, consejos y experiencia en nuestro blog. Descubre una amplia gama de temas, desde técnicas de cocina y trucos de cocina hasta cocina saludable y fotografía creativa de alimentos. ¡Únete a nosotros en un viaje a través del mundo diverso y sabroso de la comida!"
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Puede contactarnos enviando un mensaje a través de nuestro formulario de correo electrónico."
+    }
+  },
+
+  "cms": {
+    "login": {
+      "username": "Username",
+      "password": "Password",
+      "login": "Log in"
+    },
+    "navigation": {
+      "dashboard": "Dashboard",
+      "recipes": "Recipes",
+      "articles": "Articles"
+    }
+  }
+}

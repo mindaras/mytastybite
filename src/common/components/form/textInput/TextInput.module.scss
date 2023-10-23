@@ -1,0 +1,38 @@
+@import "@styles";
+
+.textInput {
+  display: block;
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+
+  &__fullWidth {
+    max-width: none;
+  }
+
+  &__fullWidthMobile {
+    @include media(small) {
+      max-width: none;
+    }
+  }
+
+  input {
+    max-width: none;
+    padding: 15px 53px 15px 20px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

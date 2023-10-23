@@ -1,0 +1,29 @@
+@import "@styles";
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.article {
+  width: 33.33%;
+
+  &:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+
+  @include media(medium) {
+    width: 50%;
+  }
+
+  @include media(small) {
+    width: 100%;
+  }
+}

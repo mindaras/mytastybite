@@ -1,0 +1,27 @@
+@import "@styles";
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 40px;
+  margin-bottom: 40px;
+
+  @include media(medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media(small) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  height: 100%;
+}

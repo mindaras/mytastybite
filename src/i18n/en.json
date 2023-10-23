@@ -1,0 +1,129 @@
+{
+  "back": "Back",
+  "none": "None",
+  "noData": "No data",
+  "form": {
+    "validation": {
+      "required": "Required",
+      "invalidFileType": "Invalid file type",
+      "fileTooBig": "File is too big"
+    }
+  },
+  "navigation": {
+    "logo": "Logo",
+    "menu": "Menu",
+    "search": "Search...",
+    "home": "Home",
+    "categories": "Categories",
+    "diets": "Diets",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "recipes": {
+    "imageAlt": "Empty bowl",
+    "filters": {
+      "category": "Category",
+      "breakfast": "Breakfast",
+      "lunch": "Lunch",
+      "dinner": "Dinner",
+      "snack": "Snack",
+      "dessert": "Dessert",
+      "diet": "Diet",
+      "healthy": "Healthy",
+      "vegetarian": "Vegetarian",
+      "vegan": "Vegan",
+      "lowCarb": "Low carb"
+    }
+  },
+  "recipe": {
+    "ingredients": "Ingredients",
+    "nutrition": "Nutrition info",
+    "duration": "Duration",
+    "servings": "Servings",
+    "description": "About the dish",
+    "preparation": "Preparation"
+  },
+  "footer": {
+    "coprights": "© 2023 My Tasty Bite. All rights reserved."
+  },
+  "notFound": {
+    "imageAlt": "Empty bowl",
+    "title": "Not Found",
+    "button": "Return Home"
+  },
+  "categories": {
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "snack": "Snack",
+    "dessert": "Dessert"
+  },
+  "diets": {
+    "healthy": "Healthy",
+    "vegetarian": "Vegetarian",
+    "vegan": "Vegan",
+    "lowCarb": "Low carb"
+  },
+  "contact": {
+    "title": "Contact",
+    "message": "Have any requests, suggestions, or just want to leave feedback?",
+    "form": {
+      "success": "Thank you for your message!",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send",
+      "sending": "Sending..."
+    }
+  },
+  "metadata": {
+    "home": {
+      "description": "Tasty and easy to make delicous recipes.",
+      "keywords": [
+        "Recipes",
+        "Recipe",
+        "Tasty",
+        "Quick",
+        "Easy",
+        "Breakfast",
+        "Lunch",
+        "Dinner",
+        "Snack",
+        "Dessert",
+        "Healthy",
+        "Vegetarian",
+        "Vegan",
+        "Low carb"
+      ],
+      "locale": "en_US"
+    },
+    "diets": {
+      "title": "Diets",
+      "description": "Recipes for different diets: Healthy, Vegetarian, Vegan, Low carb."
+    },
+    "categories": {
+      "title": "Categories",
+      "description": "Different categories of recipes: Breakfast, Lunch, Dinner, Desserts."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Explore a world of culinary delights, tips, and expertise on our blog. Discover a wide range of topics, from cooking techniques and kitchen hacks to health-conscious home cooking and creative food photography. Join us on a journey through the diverse and flavorful world of food!"
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "You can reach us by submitting a message through our email form."
+    }
+  },
+
+  "cms": {
+    "login": {
+      "username": "Username",
+      "password": "Password",
+      "login": "Log in"
+    },
+    "navigation": {
+      "dashboard": "Dashboard",
+      "recipes": "Recipes",
+      "articles": "Articles"
+    }
+  }
+}

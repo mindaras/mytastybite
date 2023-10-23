@@ -1,0 +1,29 @@
+@import "@styles";
+
+.button {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  font-size: 12px;
+  margin: 0 4px;
+  transition: ease 0.3s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.button__active {
+  background-color: rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}

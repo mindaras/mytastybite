@@ -1,0 +1,32 @@
+@import "@styles";
+
+.errors {
+  position: relative;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid $red;
+  border-radius: 4px;
+  background-color: lighten($red, 60%);
+
+  * {
+    color: $red;
+  }
+
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+
+  li:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

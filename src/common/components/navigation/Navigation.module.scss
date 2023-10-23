@@ -1,0 +1,153 @@
+@import "@styles";
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+  padding: 0 40px;
+  z-index: 100;
+
+  @include media(medium) {
+    position: fixed;
+    width: 100%;
+  }
+
+  @include media(small) {
+    padding: 0 20px;
+  }
+}
+
+.logoContainer {
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px;
+  margin-right: 20px;
+  display: block;
+
+  @include media(small) {
+    max-width: 40px;
+    display: none;
+  }
+}
+
+.logo__mobile {
+  display: none;
+
+  @include media(small) {
+    display: block;
+  }
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @include media(medium) {
+    position: fixed;
+    height: 100vh;
+    align-items: flex-start;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 60px 40px;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+    transition: ease 0.3s;
+    transform: translateX(100%);
+    z-index: 110;
+  }
+}
+
+.links__visible {
+  transform: translateX(0);
+}
+
+.link {
+  font-size: 14px;
+
+  &__active {
+    font-weight: bold;
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
+
+  @include media(medium) {
+    &:not(:last-of-type) {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.search {
+  flex-grow: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.hamburger {
+  display: none !important;
+  cursor: pointer;
+
+  @include media(medium) {
+    display: block !important;
+  }
+}
+
+.close {
+  display: none !important;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 120;
+
+  @include media(medium) {
+    display: block !important;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  display: none;
+
+  @include media(medium) {
+    display: block;
+  }
+}
+
+.separator {
+  margin: 20px 0;
+  height: 1px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: none;
+
+  @include media(medium) {
+    display: block;
+  }
+}

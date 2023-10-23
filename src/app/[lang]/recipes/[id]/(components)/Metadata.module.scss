@@ -1,0 +1,34 @@
+@import "@styles";
+
+@mixin metadata {
+  margin-bottom: 40px;
+
+  > * {
+    &:first-of-type {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.metadata {
+  @include metadata;
+
+  @include media(medium) {
+    display: none;
+  }
+}
+
+.mobileMetadata {
+  @include metadata;
+  display: none;
+  margin-top: 40px;
+
+  @include media(medium) {
+    display: block;
+  }
+}
+
+.metaTitle {
+  font-size: 18px;
+  font-weight: bold;
+}

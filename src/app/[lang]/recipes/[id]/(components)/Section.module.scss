@@ -1,0 +1,22 @@
+@import "@styles";
+
+.section {
+  &:not(:last-of-type) {
+    margin-bottom: 40px;
+
+    @include media(medium) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include media(medium) {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
