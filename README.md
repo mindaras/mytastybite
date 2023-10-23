@@ -96,7 +96,7 @@ Next.js 13's middleware is tailored for usage on `Edge runtime`, which doesn't s
 
 ### CMS Article list
 
-![cms article list](assets/screenshots/cmsDashboard.jpg)
+![cms article list](assets/screenshots/cmsArticles.jpg)
 
 ### CMS Article Edit Screen
 
