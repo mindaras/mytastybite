@@ -40,6 +40,8 @@ In order to facilitate this project these infrastructure components are used:
 - `AWS` as a cloud provider
 - `EC2` as VM instance type
 - `S3` as asset storage
+- `Redis` as caching service
+- `OpenTelemetry Collector` as performance metrics collector and processor
 - `Nginx` as a web server
 - `Certbot` as certificate renewal solution
 - `Let's Encrypt` as certificate authority
