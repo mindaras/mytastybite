@@ -14,7 +14,7 @@ Fullstack recipe website solution with blogging section and content management s
 
 - `Rate limiting` using token bucket algorithm
 - `Internationalization` with scalability to add new languages, utilizing translations mechanism
-- `Open Telemetry` integration
+- `OpenTelemetry` integration
 - `Content management system`
 - `Authentication` using JWT and refresh tokens with token rotation strategy utilizing Redis
 - `Session refresh` using seamless redirects upon client navigation and background refreshes on API requests
