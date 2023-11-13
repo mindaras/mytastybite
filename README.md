@@ -1,6 +1,6 @@
 # mytastybite.com recipe website
 
-Fullstack recipe website solution with blogging section and content management system developed using Next.js 13, averaging `33 ms` response time.
+Fullstack recipe website solution with blogging section and content management system developed using Next.js, averaging `33 ms` response time.
 
 ## Architecture
 
