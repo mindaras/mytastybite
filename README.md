@@ -54,7 +54,7 @@ In order to facilitate this project these infrastructure components are used:
 
 The environment starts smoothly with a single command `npm run start:dev`, which starts both `cache` and `database` instances, seeds them, and starts a development application.
 
-## Restructions
+## Restrictions
 
 Next.js 13's middleware is tailored for usage on `Edge runtime`, which doesn't support core Node.js modules, which in turn prohibits usage of many tools, including the ones necessary for `rate limting` and `authentication`, so these have to be implemented per endpoint as of Next.js `13.5.1` implementation.
 
